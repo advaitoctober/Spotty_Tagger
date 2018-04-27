@@ -55,6 +55,45 @@ ggplot(df, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() #+ ge
 ggplot(df, aes(pc1,pc2,color=as.factor(tracks$positivity_level))) + geom_point() #+ geom_text(aes(label=tracks$positivity_level))
 
 
+
+################################
+library("Rtsne")
+data <- tracksColFil
+data_Bk <- tracks
+track.measures <- c("acousticness","danceability","duration_ms","energy",
+                    "instrumentalness","liveness","loudness","speechiness","tempo",
+                    "valence","energy_level","positivity_level")
+
+data = data[complete.cases(data), ]
+data = unique(data)
+
+data_Bk = data_Bk[complete.cases(data_Bk), ]
+data_Bk = unique(data_Bk)
+nrow(data_Bk)
+
+nrow(data)
+data <- data[,track.measures]
+data.scaled <- data
+data.scaled <- scale(data)
+
+Labels <-data$genre
+colors  = rainbow(length(unique(Labels)))
+names(colors) = unique(Labels)
+
+data.scaled = data.scaled[complete.cases(data.scaled), ]
+tsne <- Rtsne(data.scaled, dims = 5, perplexity=30, verbose=TRUE, max_iter = 2000,check_duplicates = FALSE)
+
+
+dfts = data.frame(pc1=tsne$Y[,1],pc2=tsne$Y[,2])
+ggplot(dfts, aes(pc1,pc2,color=as.factor(data_Bk$genre))) + geom_point() #+geom_text(aes(label=data_Bk$genre))
+
+
+
+text(tsne$Y, labels=Labels, col=colors[Labels])
+
+d = dist(tsne$Y)
+dim(as.matrix(tsne$Y))
+dim(as.matrix(d))
 ##################
 #Elbow Method for finding the optimal number of clusters
 set.seed(123)
@@ -70,6 +109,31 @@ plot(1:k.max, wss,
      ylab="Total within-clusters sum of squares")
 
 ####
+
+kMeansTrk = kmeans(d,centers = 5)
+
+table(kMeansTrk$cluster,data_Bk$energy_level)
+table(kMeansTrk$cluster,data_Bk$positivity_level)
+
+tracks_CLust = tracks
+
+tracks_CLust$clust = kMeansTrk$cluster
+metaCol = c('album', 'artist', 'genre', 'track_name','clust')
+tracks_CLust = tracks_CLust[,metaCol]
+quartz()
+ggplot(dfts, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() +geom_text(aes(label=data_Bk$track_name))
+
+quartz()
+ggplot(dfts, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() +geom_text(aes(label=data_Bk$genre))
+
+tracks_CLust$clust = kMeansTrk$cluster
+metaCol = c('album', 'artist', 'genre', 'track_name','clust')
+tracks_CLust = tracks_CLust[,metaCol]
+
+
+
+
+ggplot(df, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() #+ geom_text(aes(label=tracks$positivity_level))
 
 #####################################
 # biplot 
