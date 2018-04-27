@@ -10,7 +10,8 @@ tracks = read.csv('tracksMusicInfo.csv')
 
 summary(tracks)
 
-colsList = c('acousticness','danceability', 'duration_ms', 'energy', 'instrumentalness', 'key','liveness', 'loudness', 'mode', 'speechiness', 'tempo','time_signature', 'valence')
+#colsList = c('acousticness','danceability', 'duration_ms', 'energy', 'instrumentalness', 'key','liveness', 'loudness', 'mode', 'speechiness', 'tempo','time_signature', 'valence')
+colsList = c('acousticness','danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence')
 
 tracksColFil = tracks[,colsList]
 
@@ -25,11 +26,7 @@ artist = as.character(tracks[,'track_name'])
 artist = as.character(tracks[,'artist'])
 
 df = data.frame(artist,pc1,pc2)
-plot(df$pc1,df$pc2) 
-with(df, text(pc1~pc2, labels = artist), pos = 4)
 
-
-text(pc1 ~ pc2, labels=artist, cex= 0.7)
 
 
 ggplot(df, aes(pc4,pc5,color=tracks$genre)) + geom_point() #+ geom_text(aes(label=artist))
@@ -90,4 +87,9 @@ table(kmed$pamobject$clustering, tracks$genre)
 x11()
 layout(matrix(c(1,2),1,2))
 plot(kmed$pamobject)
-
+#####################################
+# K means
+#####################################
+d = dist(tracksColFil)
+kMeansTrk = kmeans(d,centers = 9)
+table(kMeansTrk$cluster,tracks$genre)
