@@ -3,6 +3,7 @@ library(ggplot2)
 library("multtest")
 library("fpc")
 library("cluster")
+library("Rtsne")
 #setwd("~/Documents/GitHub/Spotty_Tagger")
 setwd("C:/DragonBallZ/git_Repo/Spotty_Tagger")
 
@@ -29,7 +30,7 @@ df = data.frame(artist,pc1,pc2)
 
 
 
-ggplot(df, aes(pc4,pc5,color=tracks$genre)) + geom_point() #+ geom_text(aes(label=artist))
+ggplot(df, aes(pc1,pc2,color=tracks$genre)) + geom_point() #+ geom_text(aes(label=artist))
 
 
 #####################################
@@ -93,3 +94,22 @@ plot(kmed$pamobject)
 d = dist(tracksColFil)
 kMeansTrk = kmeans(d,centers = 9)
 table(kMeansTrk$cluster,tracks$genre)
+
+
+####################################
+# Using TSNE
+####################################
+tracks = tracks[complete.cases(tracks), ]
+colors = rainbow(length(unique(tracks$genre)))
+colsList = c('acousticness','danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence')
+
+tracksColFil = tracks[,colsList]
+
+names(colors) = unique(tracks$genre)
+
+
+tsne <- Rtsne(tracksColFil, dims = 2, perplexity=30, verbose=TRUE, max_iter = 1000 ,check_duplicates = FALSE)
+
+plot(tsne$Y, t='n', main="tsne")
+text(tsne$Y, labels=tracks$genre, col=colors[tracks$genre])
+
