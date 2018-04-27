@@ -10,10 +10,10 @@ setwd("~/Documents/GitHub/Spotty_Tagger")
 
 tracks = read.csv('dataWithLabel.csv')
 tracks = tracks[which(tracks$genre == "Rock" | tracks$genre == "Pop"),]
-
+tracks = tracks[complete.cases(tracks), ]
 summary(tracks)
 
-colsList = c('acousticness','danceability', 'duration_ms', 'energy', 'instrumentalness', 'key','liveness', 'loudness', 'mode', 'speechiness', 'tempo','time_signature', 'valence')
+colsList = c('acousticness','danceability', 'duration_ms', 'energy', 'instrumentalness', 'key','liveness', 'loudness', 'mode', 'speechiness', 'tempo','time_signature', 'valence','positivity_level','energy_level')
 
 tracksColFil = tracks[,colsList]
 
@@ -28,20 +28,48 @@ pc5 = trackPCA$x[,5]
 track_name = as.character(tracks[,'track_name'])
 artist = as.character(tracks[,'artist'])
 mood = as.character(tracks[,'mood'])
+
 df = data.frame(artist,pc1,pc2)
 
 
 #####
 # Kmeans
 #####
+d<- dist(tracksColFil)
+d = dist(tracksColFil,method = "Cosine")
+
 
 kMeansTrk = kmeans(d,centers = 5)
 
-table(kMeansTrk$cluster,tracks$mood)
+table(kMeansTrk$cluster,tracks$energy_level)
+table(kMeansTrk$cluster,tracks$positivity_level)
+
+tracks_CLust = tracks
+
+tracks_CLust$clust = kMeansTrk$cluster
+metaCol = c('album', 'artist', 'genre', 'track_name','clust')
+tracks_CLust = tracks_CLust[,metaCol]
 
 
-ggplot(df, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() + geom_text(aes(label=tracks$mood))
+ggplot(df, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() #+ geom_text(aes(label=tracks$positivity_level))
+ggplot(df, aes(pc1,pc2,color=as.factor(tracks$positivity_level))) + geom_point() #+ geom_text(aes(label=tracks$positivity_level))
 
+
+##################
+#Elbow Method for finding the optimal number of clusters
+set.seed(123)
+# Compute and plot wss for k = 2 to k = 15.
+k.max <- 10
+data <- d
+wss <- sapply(1:k.max, 
+              function(k){kmeans(data, k, nstart=10,iter.max = 10 )$tot.withinss})
+wss
+plot(1:k.max, wss,
+     type="b", pch = 19, frame = FALSE, 
+     xlab="Number of clusters K",
+     ylab="Total within-clusters sum of squares")
+
+####
 
 #####################################
 # biplot 
@@ -57,13 +85,16 @@ d = dist(tracksColFil,method = "Cosine")
 dim(as.matrix(d))
 # avg linkage
 
-hc_avg <- hclust(d, method = "average")
+hc_avg <- hclust(d, method = "complete")
 x11()
-plot(hc_avg, main="Average Linkage",labels = tracks$genre)
+plot(hc_avg, main="Average Linkage",labels = tracks$mood)
 
-data2clusters <- cutree(hc_avg,9)
+data2clusters <- cutree(hc_avg,5)
 
 hclustResultDF <- data.frame(tracks$artist,tracks$track_name,tracks$album,tracks$genre,data2clusters)
+
+table(data2clusters,tracks$energy_level)
+table(data2clusters,tracks$positivity_level)
 
 # 3395 for 1 
 sum(hclustResultDF$data2clusters == 1)
