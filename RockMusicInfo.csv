@@ -1,0 +1,151 @@
+,album,artist,genre,id,track_name,acousticness,danceability,duration_ms,energy,instrumentalness,key,liveness,loudness,mode,speechiness,tempo,time_signature,valence
+0,Queen 40 Limited Edition Collector's Box Set,Queen,70sRock,2GAIycsMaDVtMtdvxzR2xI,Bohemian Rhapsody - Remastered 2011,0.254,0.397,354320,0.396,0,3,0.268,-9.91,1,0.05,142.913,4,0.227
+1,Led Zeppelin IV (Deluxe Edition),Led Zeppelin,70sRock,5CQ30WqJwcep0pYcV4AMNc,Stairway To Heaven,0.58,0.338,482830,0.34,0.0032,9,0.116,-12.049,0,0.0339,82.433,4,0.197
+2,Hotel California (Remastered),Eagles,70sRock,40riOy7x9W7GXjyGp4pjAv,Hotel California - Remastered,0.00574,0.579,391376,0.508,0.000494,2,0.0575,-9.484,1,0.027,147.125,4,0.609
+3,London Calling,The Clash,70sRock,5jzma6gCzYtKB1DbEwFZKH,London Calling - Remastered,0.123,0.651,200480,0.801,0,0,0.0825,-7.34,1,0.0513,133.763,4,0.776
+4,L.A. Woman,The Doors,70sRock,14XWXWv5FoCbFzLksawpEe,Riders On The Storm,0.25,0.549,434720,0.722,0.0138,11,0.11,-11.729,0,0.0283,103.885,4,0.716
+5,Dressed To Kill,KISS,70sRock,6KTv0Z8BmVqM7DPxbGzpVC,Rock And Roll All Nite,0.0551,0.657,168827,0.932,0,1,0.047,-5.819,1,0.0992,144.751,4,0.888
+6,Who Are You,The Who,70sRock,02DurCgOvDdX0uKEjqcl3W,Who Are You,0.299,0.653,381627,0.631,0.00265,9,0.0627,-11.334,1,0.0461,156.32,4,0.516
+7,Hunky Dory (2015 Remastered Version),David Bowie,70sRock,0LrwgdLsFaWh9VXIjBRe8t,Changes - 2015 Remastered Version,0.505,0.547,217747,0.308,0,0,0.109,-11.75,1,0.0377,114.719,4,0.41
+8,Cosmo's Factory (40th Anniversary Edition),Creedence Clearwater Revival,70sRock,3Bh6uInhcVBVvLraGZdkKD,Who'll Stop The Rain,0.0428,0.602,147493,0.801,0.000409,7,0.0739,-6.763,1,0.0344,123.562,4,0.576
+9,Pearl (Legacy Edition),Janis Joplin,70sRock,1IqFh00G2kvvMm8pRMpehA,Me and Bobby McGee,0.302,0.453,271333,0.464,5.96E-05,2,0.152,-10.96,1,0.0431,93.19,4,0.658
+10,Sticky Fingers (Remastered),The Rolling Stones,70sRock,52dm9op3rbfAkc1LGXgipW,Wild Horses,0.669,0.371,341773,0.404,0.00453,7,0.0805,-6.452,1,0.0255,74.386,4,0.153
+11,Imagine,John Lennon,70sRock,7pKfPomDEeI4TPT6EOYjn9,Imagine - 2010 - Remaster,0.907,0.547,187867,0.257,0.183,0,0.0935,-12.358,1,0.0252,75.752,4,0.169
+12,Let It Be (Remastered),The Beatles,70sRock,7iN1s7xHE4ifF5povM6A48,Let It Be - Remastered,0.631,0.443,243027,0.403,0,0,0.111,-8.339,1,0.0322,143.462,4,0.41
+13,Aerosmith,Aerosmith,70sRock,5MxNLUsfh7uzROypsoO5qe,Dream On,0.388,0.307,266960,0.433,9.08E-05,1,0.332,-10.057,1,0.029,160.9,4,0.224
+14,Outlandos D'Amour,The Police,70sRock,0SYRVn2YF7HBscQEmlkpTI,Roxanne - Remastered 2003,0.026,0.608,191947,0.746,2.39E-06,0,0.043,-8.851,1,0.354,134.03,4,0.745
+15,Highway to Hell,AC/DC,70sRock,2zYzyRzz6pRmhPzyfMEC8s,Highway to Hell,0.0591,0.573,208400,0.913,0.00173,6,0.156,-4.793,0,0.132,115.715,4,0.422
+16,Electric Warrior [Expanded & Remastered],T. Rex,70sRock,6FsQrRpBLgsrFeAeiQqytm,Bang a Gong (Get It On) - Remastered Version,0.157,0.729,267000,0.818,0.285,2,0.195,-9.992,1,0.0732,125.811,4,0.907
+17,Machine Head,Deep Purple,70sRock,5SAUIWdZ04OxYfJFDchC7S,Smoke On The Water,0.0983,0.632,342173,0.586,0.581,0,0.0535,-11.333,1,0.0284,114.243,4,0.89
+18,Santana's Greatest Hits,Santana,70sRock,4YMQXzscifAREG0a7KNGhB,Black Magic Woman,0.676,0.489,196467,0.349,0.0789,2,0.0866,-14.295,0,0.0323,124.348,4,0.622
+19,Reggatta De Blanc,The Police,70sRock,5xD021bM8VbqrhCVhxRozx,Message In A Bottle - Remastered 2003,0.0338,0.582,290280,0.81,1.68E-05,1,0.202,-7.024,0,0.0396,151.006,4,0.875
+20,Pronounced' Leh-'Nerd 'Skin-'Nerd,Lynyrd Skynyrd,70sRock,5EWPGh7jbTNO2wakv8LjUI,Free Bird,0.0765,0.252,547107,0.844,0.00018,0,0.084,-8.121,1,0.0572,118.158,4,0.351
+21,Slowhand 35th Anniversary (Super Deluxe),Eric Clapton,70sRock,3ykSdTGmYPFl8pDBXer1zG,Cocaine,0.043,0.698,221640,0.493,0.0429,9,0.308,-12.506,1,0.0278,105.268,4,0.671
+22,"Lola Versus Powerman and the Moneygoround, Pt. One",The Kinks,70sRock,0UAJH0k4k3slcE83a9UGCe,Lola - Coca Cola Version,0.582,0.474,241040,0.917,0.231,9,0.201,-4.19,1,0.0395,152.113,4,0.902
+23,Led Zeppelin IV (Deluxe Edition),Led Zeppelin,70sRock,3qT4bUD1MaWpGrTwcvguhb,Black Dog,0.396,0.437,295387,0.864,0.0314,4,0.242,-7.842,0,0.0904,81.394,4,0.749
+24,Ramones - 40th Anniversary Deluxe Edition (Remastered),Ramones,70sRock,4KcH1ZRV2W1q7Flq0QqC76,Blitzkrieg Bop - 2016 Remastered Version,0.000269,0.385,134467,0.783,0.47,9,0.108,-2.533,1,0.233,176.701,4,0.902
+25,In Color,Cheap Trick,70sRock,1JkZg3eMQTmTn93E8Yd3UL,I Want You to Want Me,0.78,0.806,191227,0.462,0.0134,2,0.15,-12.778,1,0.0298,92.726,4,0.736
+26,Kiss (Remastered Version),KISS,70sRock,6PmckFG2BhEELc5OM7O7DS,Black Diamond,0.0889,0.321,313467,0.627,0.00878,8,0.0699,-9.509,0,0.0542,132.855,4,0.141
+27,The Roaring Silence,Manfred Mann's Earth Band,70sRock,7kNNylJ1kswWbHeRM6UDuE,Blinded By The Light,0.291,0.456,428133,0.696,0.000207,5,0.0853,-10,1,0.0653,142.156,4,0.508
+28,Tom Petty & The Heartbreakers,Tom Petty and the Heartbreakers,70sRock,7MRyJPksH3G2cXHN8UKYzP,American Girl,0.448,0.55,214733,0.824,0.000127,2,0.366,-5.988,1,0.0334,114.512,4,0.777
+29,The Dark Side of the Moon,Pink Floyd,70sRock,05uGBKRCuePsf43Hfm0JwX,Brain Damage,0.0726,0.322,226667,0.265,0.34,2,0.366,-13.398,1,0.0302,133.577,4,0.207
+30,The Wall,Pink Floyd,70sRock,5HNCy40Ni5BZJFw1TKzRsC,Comfortably Numb,0.15,0.472,382297,0.366,0.308,11,0.0837,-12.595,0,0.0286,127.167,4,0.171
+31,Born To Run,Bruce Springsteen,70sRock,6hTcuIQa0sxrrByu9wTD7s,Born to Run,0.00501,0.27,269920,0.944,2.05E-05,4,0.116,-4.199,1,0.0975,146.347,4,0.606
+32,Layla And Other Assorted Love Songs (40th Anniversary / 2010 Remastered),Derek & The Dominos,70sRock,2kkvB3RNRzwjFdGhaUA0tz,Layla - 40th Anniversary Version / 2010 Remastered,0.584,0.394,423840,0.918,0.332,1,0.309,-3.743,1,0.0709,115.646,4,0.479
+33,The Cars,The Cars,70sRock,4alHo6RGd0D3OUbTPExTHN,Just What I Needed,0.0152,0.619,225627,0.579,6.40E-05,4,0.0858,-9.307,1,0.0473,127.224,4,0.69
+34,"Never Mind The Bollocks, Here's The Sex Pistols",Sex Pistols,70sRock,3LoDeIbiR12sAznmpNEmKA,Anarchy In The U.K.,0.0422,0.323,211973,0.978,0.00019,5,0.201,-3.841,1,0.118,134.222,4,0.168
+35,The Best Of Don McLean,Don McLean,70sRock,2QgWuCtBpNIpl5trmKCxRf,American Pie,0.6,0.527,515867,0.509,0,7,0.144,-10.893,1,0.0628,138.317,4,0.497
+36,Aqualung,Jethro Tull,70sRock,5UuikgHTxSRFRnC0zXx10i,Aqualung,0.00809,0.453,395293,0.601,0.000761,5,0.304,-9.537,1,0.0621,122.591,4,0.486
+37,Thirty Years Of Maximum R&B,The Who,70sRock,0Rp4akmfqBTpbDM6EoqtNy,Won't Get Fooled Again - Original Album Version,0.233,0.685,511293,0.806,0.728,2,0.105,-12.151,1,0.0497,134.889,4,0.31
+38,Paranoid (Remastered Edition),Black Sabbath,70sRock,3IOQZRcEkplCXg6LofKqE9,Iron Man - Remastered Version,0.00349,0.336,355304,0.792,0.00178,9,0.0437,-10.875,1,0.0848,155.588,4,0.425
+39,Jailbreak (Deluxe Edition),Thin Lizzy,70sRock,43DeSV93pJPT4lCZaWZ6b1,The Boys Are Back In Town,0.245,0.444,266720,0.719,0.000382,8,0.306,-9.742,1,0.0481,80.593,4,0.775
+40,Toys In The Attic,Aerosmith,70sRock,5SZ6zX4rOrEQferfFC2MfP,Walk This Way,0.0114,0.653,220400,0.73,1.03E-05,5,0.0754,-10.613,1,0.043,108.705,4,0.894
+41,The Definitive Rod Stewart,Rod Stewart,70sRock,1r3kj1yMff7ilIsR7hpvUo,Maggie May - Remastered Version,0.717,0.62,345680,0.559,0.433,2,0.133,-10.568,1,0.0369,129.401,4,0.527
+42,The Joker,Steve Miller Band,70sRock,1bp2IO61zbQrbWNmKKxg3f,The Joker,0.394,0.424,264504,0.446,3.78E-06,5,0.16,-9.618,1,0.0525,165.158,4,0.794
+43,News Of The World (Deluxe Remastered Version),Queen,70sRock,54flyrjcdnQdco7300avMJ,We Will Rock You - Remastered 2011,0.688,0.692,122067,0.488,0,11,0.4,-7.282,0,0.104,81.4,4,0.51
+44,Transformer,Lou Reed,70sRock,5p3JunprHCxClJjOmcLV8G,Walk On the Wild Side,0.683,0.575,254173,0.318,0.000202,0,0.0934,-16.729,1,0.109,104.522,4,0.385
+45,Sticky Fingers (Remastered),The Rolling Stones,70sRock,61UuPxxYUvacEH6SHIK3sU,Brown Sugar,0.215,0.641,228667,0.927,0.00029,0,0.045,-3.532,1,0.0351,128.606,4,0.966
+46,American Woman,The Guess Who,70sRock,3LQPTJEqOfljGBxmpgUnoC,American Woman - Remastered,0.146,0.55,307493,0.726,0.00608,2,0.428,-8.51,1,0.0516,92.697,4,0.37
+47,Agents Of Fortune,Blue Öyster Cult,70sRock,5QTxFnGygVM4jFQiBovmRo,(Don't Fear) The Reaper,0.0029,0.333,308120,0.927,0.000211,9,0.297,-8.55,0,0.0733,141.47,4,0.382
+48,Decade,Neil Young,70sRock,5IRWgQiN0c2i4U97iE3OoY,Heart of Gold,0.212,0.542,187013,0.444,0.0519,4,0.102,-11.567,0,0.0295,171.719,4,0.827
+49,Running On Empty,Jackson Browne,70sRock,4MZEZz8MqVgvIMXU6AVP22,Running On Empty,0.006,0.531,298093,0.948,0.0117,9,0.694,-5.438,1,0.0568,136.891,4,0.498
+50,Dire Straits,Dire Straits,70sRock,6cr6UDpkjEaMQ80OjWqEBQ,Sultans Of Swing,0.0632,0.73,350400,0.868,0.0661,5,0.318,-7.325,1,0.0288,148.217,4,0.923
+51,Honky Chateau (Remastered),Elton John,70sRock,3gdewACMIVMEWVbyb8O9sY,Rocket Man (I Think It's Going To Be A Long Long Time),0.386,0.602,281613,0.522,1.44E-05,10,0.0941,-9.031,1,0.0285,136.637,4,0.36
+52,Rumours (Super Deluxe),Fleetwood Mac,70sRock,0ofHAoxe9vBkTCp2UQIavz,Dreams - 2004 Remastered Edition,0.0644,0.828,257800,0.492,0.00428,0,0.128,-9.744,1,0.0276,120.151,4,0.789
+53,News Of The World (Deluxe Remastered Version),Queen,70sRock,7ccI9cStQbQdystvc6TvxD,We Are The Champions - Remastered 2011,0.389,0.467,179200,0.486,0,10,0.121,-6.645,1,0.0274,95.205,3,0.184
+54,The Anthology,Bachman-Turner Overdrive,70sRock,4Ich2datyOWMWvdNjksBDT,You Ain't Seen Nothing Yet,0.000199,0.479,232467,0.512,0.0164,11,0.123,-12.462,0,0.0382,118.953,4,0.795
+55,The Wall,Pink Floyd,70sRock,7K6xMPtAjTuLPNlJMLf5bS,"Another Brick in the Wall, Pt. 1",0.937,0.617,192146,0.0457,0.641,0,0.0991,-26.401,1,0.0344,99.48,4,0.0967
+56,Fragile (Deluxe Version),Yes,70sRock,0YveezON7jpiaHA8fnUHxN,Roundabout - Remastered Version,0.0682,0.41,510573,0.761,0.0077,4,0.0758,-9.453,0,0.0687,132.889,4,0.391
+57,Brothers And Sisters (Deluxe Edition),The Allman Brothers Band,70sRock,2Q7LpkYrS0PBpoq3iCqypa,Ramblin' Man,0.488,0.309,288160,0.831,0.00304,1,0.286,-8.288,1,0.036,181.145,4,0.934
+58,Sweet Baby James,James Taylor,70sRock,3LcYYV9ozePfgYYmXv0P3r,Fire And Rain,0.499,0.611,200579,0.35,7.84E-06,5,0.0844,-14.48,1,0.0356,76.064,4,0.36
+59,All Things Must Pass (Remastered),George Harrison,70sRock,0qdQUeKVyevrbKhAo0ibxS,My Sweet Lord,0.0794,0.538,281227,0.704,0,1,0.0867,-8.904,0,0.0332,120.963,4,0.583
+60,Who's Next (Deluxe Edition),The Who,70sRock,3qiyyUfYe7CRYLucrPmulD,Baba O'Riley,0.287,0.494,300000,0.722,0.186,5,0.283,-8.373,1,0.0347,117.312,4,0.156
+61,Best Of Blondie,Blondie,70sRock,0a4agFmqHXxcZl1nho1BxM,Heart Of Glass,0.015,0.694,275733,0.577,0.00836,4,0.0853,-14.63,1,0.0308,114.478,4,0.845
+62,Get The Knack,The Knack,70sRock,1HOMkjp0nHMaTnfAkslCQj,My Sharona,0.0589,0.586,295400,0.7,0.00125,0,0.0318,-9.558,1,0.0363,147.245,4,0.897
+63,Goodbye Yellow Brick Road (40th Anniversary Celebration),Elton John,70sRock,5Wj1rJnCLpMHdLaxsFtJLs,Bennie And The Jets - Remastered 2014,0.238,0.668,322549,0.678,6.29E-06,0,0.527,-8.015,1,0.0496,132.584,4,0.778
+64,Eddie Money,Eddie Money,70sRock,5ZYvcJ04ccUw2Matbnmu0U,Baby Hold On,0.154,0.642,210827,0.641,1.23E-06,2,0.0475,-12.444,1,0.049,120.316,4,0.85
+65,Blood On The Tracks,Bob Dylan,70sRock,6Vcwr9tb3ZLO63F8DL8cqu,Tangled up in Blue,0.414,0.421,341627,0.661,1.16E-06,9,0.0962,-13.126,1,0.0433,100.965,4,0.554
+66,Van Halen (Remastered),Van Halen,70sRock,3KhF2YiNpJvGpfiCW45R6D,Runnin' With The Devil - 2015 Remastered Version,0.148,0.472,214960,0.9,0.000297,8,0.34,-6.406,0,0.0582,95.826,4,0.42
+67,2112,Rush,70sRock,5H8xFHau0x3PI1CssO6EaX,2112: Overture / The Temples Of Syrinx / Discovery / Presentation / Oracle / Soliloquy / Grand Finale - Medley,0.0787,0.345,1233667,0.795,0.00165,2,0.18,-7.44,1,0.108,134.141,4,0.189
+68,All The Young Dudes,Mott The Hoople,70sRock,0WNGPpmWqzPnk0psUhJ3SX,All the Young Dudes,0.208,0.429,211067,0.668,0,4,0.538,-7.539,0,0.044,77.737,4,0.398
+69,20th Century Masters: The Millennium Collection: Best Of Free,Free,70sRock,2ZMEdXxVSRfMshCDBMjt0o,All Right Now,0.00966,0.786,334000,0.481,0,2,0.0954,-11.236,1,0.114,119.854,4,0.785
+70,Born To Run,Bruce Springsteen,70sRock,4cKJsZuzbNBpdxeMC9pBQG,Backstreets,0.201,0.225,390147,0.889,0.734,7,0.379,-4.371,1,0.0337,96.02,4,0.599
+71,Little Queen,Heart,70sRock,4KfSdst7rW39C0sfhArdrz,Barracuda,0.015,0.547,261933,0.691,0.105,4,0.144,-13.553,0,0.0369,137.148,4,0.667
+72,Desolation Boulevard,Sweet,70sRock,3Pu3IChaAoa5EjgUBv5F6x,Ballroom Blitz,0.0821,0.644,246573,0.799,0.00154,4,0.055,-10.856,0,0.0598,108.382,4,0.889
+73,The Very Best Of Ram Jam,Ram Jam,70sRock,2ZOTtG7v1OrSNs6EINIGb4,Black Betty,0.018,0.465,237893,0.865,0.00135,11,0.0769,-9.573,0,0.098,117.528,4,0.677
+74,Some Girls,The Rolling Stones,70sRock,77oU2rjC5XbjQfNe3bD6so,Beast Of Burden - Remastered,0.387,0.787,265173,0.877,0.00065,1,0.0387,-3.822,0,0.032,100.61,4,0.837
+75,Band On The Run,Paul McCartney,70sRock,1H4idkmruFoJBg1DvUv2tY,Band On The Run - Remastered 2010,0.0694,0.481,313027,0.58,0.0012,4,0.0886,-8.712,0,0.0333,124.983,4,0.629
+76,Tom Petty & The Heartbreakers,Tom Petty and the Heartbreakers,70sRock,5x53pbGk6sbl1BGom19QQ5,Breakdown,0.398,0.625,163893,0.35,6.76E-05,9,0.123,-8.395,0,0.0436,113.688,4,0.69
+77,Leftoverture,Kansas,70sRock,4DMKwE2E2iYDKY01C335Uw,Carry on Wayward Son,0.00316,0.483,323000,0.786,8.86E-05,7,0.446,-5.735,1,0.0319,126.748,4,0.793
+78,Cat Scratch Fever,Ted Nugent,70sRock,0SvfyHYDp2uIsHt53LDlI9,Cat Scratch Fever,0.0049,0.549,219400,0.916,0.123,4,0.104,-4.185,0,0.034,127.131,4,0.632
+79,Bridge Over Troubled Water,Simon & Garfunkel,70sRock,6l8EbYRtQMgKOyc1gcDHF9,Bridge Over Troubled Water,0.822,0.149,293120,0.206,0.000649,3,0.115,-13.888,1,0.0323,79.764,4,0.264
+80,Moondance (Deluxe Edition),Van Morrison,70sRock,1US01PIcb3RFVrcN8mO8CS,Caravan,0.294,0.641,300800,0.397,0.000717,7,0.0496,-12.285,1,0.0454,81.962,4,0.57
+81,10 From 6,Bad Company,70sRock,3DnzFhjydj8XXtCAnVKz14,Can't Get Enough - Remastered Version,0.132,0.662,254400,0.763,0.0013,0,0.067,-7.475,1,0.0397,126.333,4,0.699
+82,Deguello,ZZ Top,70sRock,30jsPpxLvSCYTTTtdjRzBp,Cheap Sunglasses,0.148,0.617,288400,0.461,0.0151,5,0.12,-14.485,0,0.0434,93.853,4,0.828
+83,The Captain And Me,The Doobie Brothers,70sRock,7cy1bEJV6FCtDaYpsk8aG6,China Grove,0.319,0.623,195307,0.91,0.000448,9,0.081,-8.448,1,0.0384,145.624,4,0.745
+84,Boston,Boston,70sRock,39C5FuZ8C8M0QI8CrMsPkR,Foreplay / Long Time,0.00975,0.436,467640,0.657,0.00748,5,0.0931,-8.868,1,0.0541,118.693,4,0.21
+85,Gold,Styx,70sRock,11G0yprQtMU53BLPMSr093,Come Sail Away,0.16,0.287,365000,0.562,0,0,0.103,-7.549,1,0.0304,147.622,4,0.126
+86,Even In The Quietest Moments (Remastered),Supertramp,70sRock,6XUHsYE38CEbYunT983O9G,Give A Little Bit,0.0803,0.536,248173,0.828,0.00806,2,0.271,-5.246,1,0.0502,90.817,4,0.495
+87,Jackson Browne (Saturate Before Using),Jackson Browne,70sRock,3QcuZo6WLcFkqqLmDs0d95,Doctor My Eyes,0.266,0.48,199907,0.626,5.70E-05,5,0.0857,-8.406,1,0.0294,75.63,4,0.542
+88,Straight Shooter,Bad Company,70sRock,3KPwt1LBpt1jVSHz8GXERo,Feel Like Makin' Love - 2015 Remastered Version,0.326,0.543,313840,0.529,0.00269,7,0.709,-9.717,1,0.0301,85.126,4,0.746
+89,Shine On - A Collection,Peter Frampton,70sRock,3rHHxve6ZpvjRM9bqTu4tL,Do You Feel Like We Do,0.0439,0.295,836667,0.568,0.0117,0,0.977,-8.232,1,0.0284,98.284,4,0.384
+90,L.A. Woman,The Doors,70sRock,6DmfWj5kOa1fX8AwN9byOn,L.A. Woman,0.0817,0.354,471160,0.731,0.00119,2,0.115,-9.178,1,0.0381,170.64,4,0.698
+91,Platinum Collection,Genesis,70sRock,2Nt7pyRux0CB8i2KB4DMVT,The Lamb Lies Down On Broadway (Platinum Collection Version),0.453,0.377,289373,0.778,0,4,0.571,-6.658,1,0.0827,117.238,4,0.218
+92,Pat Garrett & Billy The Kid (Soundtrack From The Motion Picture) (Remastered),Bob Dylan,70sRock,6HSXNV0b4M4cLJ7ljgVVeh,Knockin' On Heaven's Door - Remastered,0.251,0.513,149880,0.396,0.177,7,0.11,-13.061,1,0.0299,140.208,4,0.229
+93,Aja,Steely Dan,70sRock,7Hx2EA4wGaxtsiZCVVLV1i,Deacon Blues,0.481,0.751,456640,0.572,0.000532,0,0.105,-12.324,1,0.0388,115.839,4,0.58
+94,Hotel California (Remastered),Eagles,70sRock,6gXrEUzibufX9xYPk3HD5p,Life In The Fast Lane - Remastered,0.0966,0.667,286220,0.755,6.94E-05,9,0.0523,-7.246,1,0.069,109.535,4,0.883
+95,"But Seriously, Folks...",Joe Walsh,70sRock,2wvMC5EyaaYQwBfiwwY2xE,Life's Been Good,0.25,0.505,536227,0.476,0.00915,2,0.113,-12.897,1,0.0711,99.31,4,0.542
+96,Aqualung,Jethro Tull,70sRock,0MYNeFsKpzBHwrJGfWZysV,Locomotive Breath,0.103,0.614,268907,0.566,0.0113,11,0.215,-11.059,0,0.0562,125.288,4,0.2
+97,Greatest Hits,Neil Young,70sRock,4CqbJHZ6JtVM3MLh41y7JI,Like A Hurricane,0.0129,0.423,501213,0.834,0.00113,9,0.164,-5.498,0,0.037,113.876,4,0.606
+98,A New World Record,Electric Light Orchestra,70sRock,2hdNya0b6Cc2YJ8IyaQIWp,Livin' Thing,0.583,0.549,212307,0.651,0,0,0.121,-7.097,1,0.0323,122.818,4,0.368
+99,Bat Out Of Hell,Meat Loaf,70sRock,2g7gviEeJr6pyxO7G35EWQ,Paradise By the Dashboard Light,0.214,0.326,508333,0.872,0,2,0.461,-7.602,1,0.122,173.381,4,0.492
+0,Hybrid Theory,Linkin Park,2000sRock,3tSmXSxaAnU1EPGKa6NytH,In The End,0.0103,0.542,216933,0.853,0,3,0.108,-6.407,0,0.0498,105.256,4,0.37
+1,Infest,Papa Roach,2000sRock,5eek2X5459T1HoYJk2CKXv,Last Resort,0.000504,0.581,199893,0.887,0.00111,4,0.268,-3.659,0,0.0624,90.578,4,0.724
+2,Phobia,Breaking Benjamin,2000sRock,5pvJ59i7JxylN8VB24xdMs,The Diary Of Jane - Single Version,5.53E-05,0.374,200547,0.961,0.0834,10,0.138,-4.421,0,0.0851,167.032,4,0.357
+3,Appeal To Reason,Rise Against,2000sRock,3asFGFY3uLjMDmML1p0tYm,Savior,0.00164,0.549,242280,0.93,6.67E-05,5,0.39,-3.468,0,0.0487,112.447,4,0.526
+4,Trapt,Trapt,2000sRock,1AEYT6VxrxXPMoQUxsY0E4,Headstrong,0.000172,0.492,285570,0.896,2.78E-06,4,0.189,-5.819,0,0.117,184.981,4,0.534
+5,A Beautiful Lie,Thirty Seconds To Mars,2000sRock,1p1nO35bbi4ZlQgjIA4oa4,The Kill (Bury Me),0.0014,0.309,231533,0.912,0.000271,4,0.582,-3.881,0,0.0646,183.035,3,0.302
+6,By The Way (Deluxe Version),Red Hot Chili Peppers,2000sRock,3ZOEytgrvLwQaqXreDs2Jx,Can't Stop,0.0179,0.618,269000,0.938,0,9,0.167,-3.442,1,0.0456,91.455,4,0.875
+7,The Sickness,Disturbed,2000sRock,7dQvzryAP8DrGuhG5KFF5h,Down With The Sickness,0.000753,0.68,277853,0.846,2.35E-05,8,0.144,-5.252,1,0.054,89.962,4,0.926
+8,The Better Life,3 Doors Down,2000sRock,6ZOBP3NvffbU4SZcrnt1k6,Kryptonite,0.00624,0.545,233827,0.86,2.18E-05,11,0.165,-5.054,0,0.0306,99.031,4,0.581
+9,Three Days Grace (Deluxe Version),Three Days Grace,2000sRock,6rUp7v3l8yC4TKxAAR5Bmx,I Hate Everything About You,0.00461,0.498,231480,0.83,0,6,0.139,-5.157,0,0.0421,89.342,4,0.453
+10,One-X,Three Days Grace,2000sRock,56sk7jBpZV0CD31G9hEU3b,Animal I Have Become,0.000684,0.553,231400,0.853,0,8,0.126,-3.668,1,0.0339,122.023,4,0.506
+11,Fallen,Evanescence,2000sRock,0COqiPhxzoWICwFCS4eZcp,Bring Me To Life,0.00895,0.316,235893,0.945,1.85E-06,4,0.396,-3.169,0,0.124,189.931,4,0.32
+12,The Sufferer & The Witness,Rise Against,2000sRock,4OSbctVD37ycS0H3rwRm72,Prayer Of The Refugee,0.00228,0.253,199387,0.969,1.88E-05,3,0.434,-3.46,0,0.133,150.93,4,0.437
+13,The Poison (Deluxe Version),Bullet For My Valentine,2000sRock,3iWlbqAaoIR7H7gyO3a6rV,Tears Don't Fall,0.000729,0.212,348387,0.924,2.23E-06,7,0.0831,-3.349,0,0.135,162.128,4,0.244
+14,Hybrid Theory,Linkin Park,2000sRock,5Za8bsHPb08SZXm0bvbDXy,Crawling,0.0466,0.58,208960,0.702,3.20E-06,4,0.536,-5.565,1,0.0337,105.076,4,0.299
+15,Vol. 3 The Subliminal Verses,Slipknot,2000sRock,4cpOvpvvx1upv0HDyZKVQJ,Duality,0.000237,0.354,252613,0.982,0.000294,4,0.204,-3.026,0,0.168,143.772,4,0.194
+16,Stadium Arcadium,Red Hot Chili Peppers,2000sRock,10Nmj3JCNoMeBQ87uw5j8k,Dani California,0.017,0.553,283000,0.865,1.05E-05,9,0.267,-4.751,0,0.0409,96.161,4,0.735
+17,Chocolate Starfish And The Hot Dog Flavored Water,Limp Bizkit,2000sRock,3IV4swNduIRunHREK80owz,Rollin' (Air Raid Vehicle),0.00506,0.599,213760,0.932,0,9,0.269,-3.328,1,0.18,96.234,4,0.692
+18,Toxicity,System Of A Down,2000sRock,7kwiwQhWRBSP1PJv4ZFJUK,Chop Suey!,0.000353,0.42,210240,0.929,0.000747,7,0.122,-3.899,0,0.121,127.204,4,0.3
+19,Anthology,Alien Ant Farm,2000sRock,5z6xHjCZr7a7AIcy8sPBKy,Smooth Criminal,0.00434,0.647,209267,0.964,0.0036,9,0.15,-4.225,0,0.06,126.942,4,0.875
+20,Come What[ever] May,Stone Sour,2000sRock,76aadnUFFANRNDs6L3aqxw,Through Glass,0.0417,0.545,282947,0.753,0,3,0.389,-4.618,0,0.036,105.754,4,0.434
+21,Good Apollo I'm Burning Star IV Volume One: From Fear Through The Eyes Of Madness,Coheed and Cambria,2000sRock,42GP0xKtkolBnmqQRvSllO,Welcome Home,0.00648,0.442,374973,0.951,1.12E-06,11,0.0887,-5.27,1,0.11,154.004,4,0.158
+22,As Daylight Dies (Special Edition),Killswitch Engage,2000sRock,6zKF4293k44ItKWJJgrhXv,My Curse,7.61E-05,0.197,244773,0.956,0.00992,10,0.261,-2.908,0,0.0663,177.018,3,0.209
+23,Getting Away With Murder,Papa Roach,2000sRock,1UREw2MCfU0xwBzCAjxlUD,Scars,0.0948,0.384,208186,0.921,0,11,0.168,-3.334,1,0.055,89.922,4,0.471
+24,Dark Horse,Nickelback,2000sRock,4pckuF6VOu58o1pMFUdlPW,Burn it to the Ground,0.00037,0.617,210947,0.913,0.463,11,0.366,-3.449,1,0.0931,132.047,4,0.687
+25,Satellite (U.S. Version WEA Distribution),P.O.D.,2000sRock,0UrWr7Jnu1heq1o99ZwUd0,Youth Of The Nation,0.00834,0.563,256240,0.86,0.0106,8,0.39,-7.533,1,0.0621,97.867,4,0.517
+26,Awake,Skillet,2000sRock,4CbKVDZkYKdv69I4bCaKUq,Hero,0.00791,0.533,186813,0.967,0,1,0.336,-2.543,1,0.0995,142.018,4,0.782
+27,DECEMBERUNDERGROUND,AFI,2000sRock,0Ti2dlF2xLjXblvdU5fCxM,Miss Murder,0.000213,0.309,206587,0.875,0.00168,1,0.113,-4.49,1,0.0488,143.526,4,0.725
+28,Away From The Sun,3 Doors Down,2000sRock,3WbphvawbMZ8FyqDxYGdSQ,When I'm Gone,0.00457,0.496,260507,0.765,0,7,0.104,-5.66,1,0.033,74.072,4,0.337
+29,Wonder What's Next,Chevelle,2000sRock,1gyee1JuFFiP476LQpRMYU,The Red,0.000671,0.509,238400,0.843,0.000803,1,0.348,-3.318,0,0.0488,140.055,3,0.332
+30,Hoobastank,Hoobastank,2000sRock,1eK4KsyjAzr2xJ86Tj5SWa,Crawling In The Dark,0.000295,0.592,175027,0.932,7.59E-05,6,0.138,-4.491,0,0.0885,93.675,4,0.698
+31,Audioslave,Audioslave,2000sRock,1Qdnvn4XlmZANCVy3XjrQo,Show Me How to Live,0.000336,0.433,277840,0.854,0.000177,9,0.162,-3.868,1,0.0483,89.4,4,0.368
+32,Issues,Korn,2000sRock,2F6FfZ4w8z3eJpSxPotVO5,Falling Away from Me,0.00014,0.468,270920,0.769,0.00124,4,0.271,-7.036,1,0.041,104.102,4,0.17
+33,All Hope Is Gone,Slipknot,2000sRock,2MvIMgtWyK88OiPi0J8Dg3,Psychosocial,0.00252,0.576,283400,0.989,0.0032,2,0.0243,-1.909,1,0.112,135.093,4,0.352
+34,Morning View,Incubus,2000sRock,61qn7uoDsuswZs5p2DkFiP,Wish You Were Here,0.000631,0.246,212733,0.768,0.301,9,0.102,-7.48,1,0.0387,169.873,4,0.35
+35,Lost and Found,Mudvayne,2000sRock,0INUE1K7cEiE8VH63Rv5RJ,Happy?,0.000823,0.546,216427,0.971,2.11E-05,5,0.275,-2.661,0,0.0965,100.078,4,0.383
+36,Faceless,Godsmack,2000sRock,44NRdYQw7P0GWuiunRv3hr,I Stand Alone,4.78E-05,0.213,246040,0.93,0,0,0.126,-4.478,1,0.0671,169.221,4,0.386
+37,This Is War,Thirty Seconds To Mars,2000sRock,4sjLcE0GQ6urc4iUXsUPe9,Kings and Queens,0.0401,0.293,347667,0.816,2.95E-05,8,0.13,-5.432,1,0.0844,164.982,4,0.148
+38,Dysfunction (Internet Release),Staind,2000sRock,6264zKFgXM13JuRBX4MMyD,Mudshovel,0.000224,0.328,282093,0.826,0.000944,6,0.0818,-5.085,1,0.0362,106.606,4,0.341
+39,Scars & Souvenirs,Theory of a Deadman,2000sRock,5kk853JTjxdgJYroQhXVQ6,Bad Girlfriend,0.0032,0.507,205627,0.953,0,0,0.26,-2.608,1,0.0526,135.055,4,0.681
+40,Mezmerize,System Of A Down,2000sRock,0EYOdF5FCkgOJJla8DI2Md,B.Y.O.B.,0.00662,0.556,255467,0.981,0,1,0.218,-2.688,0,0.128,101.423,4,0.716
+41,The Sound of Madness,Shinedown,2000sRock,0CwYG1UnRmOx8Q1EzElCIL,Second Chance,0.00107,0.46,222067,0.796,0,0,0.106,-4.501,0,0.0333,100.011,4,0.182
+42,Karma and Effect,Seether,2000sRock,5ynxx6zC4dgzsMHLYQ04Dc,Remedy,0.00018,0.546,207213,0.959,0.00144,8,0.0584,-4.664,1,0.082,127.831,4,0.416
+43,Tri-polar,Sick Puppies,2000sRock,5omWAB5iNMHvbAfBSzkdu8,You're Going Down,0.0116,0.488,187347,0.842,0.00127,6,0.146,-5.926,1,0.0469,90.003,4,0.41
+44,Moving Forward In Reverse: Greatest Hits,Saliva,2000sRock,55SUneDPq3ZOrJi8sVG78G,Click Click Boom,0.00324,0.609,252933,0.937,0.000294,6,0.129,-2.912,1,0.0495,95.961,4,0.493
+45,Come Clean,Puddle Of Mudd,2000sRock,4BL79Qie6r0TkXuNQLC8gQ,Control,0.00301,0.433,230093,0.914,0,11,0.296,-3.4,1,0.0985,163.759,4,0.635
+46,Sinner,Drowning Pool,2000sRock,7CpbhqKUedOIrcvc94p60Y,Bodies,0.00347,0.656,201960,0.932,0.00147,4,0.144,-3.405,0,0.0708,130.936,4,0.544
+47,White Pony (U.S. Version),Deftones,2000sRock,51c94ac31swyDQj9B3Lzs3,Change (In the House of Flies) - In The House Of Flies LP Version,0.000249,0.269,299533,0.853,0.000246,7,0.118,-4.647,0,0.0854,141.581,4,0.179
+48,Mer De Noms,A Perfect Circle,2000sRock,4XDBEoD6QFnzDY5oMmNVXN,The Hollow,0.000162,0.295,178960,0.789,0.0904,1,0.0986,-5.559,1,0.0704,104.133,4,0.513
+49,The Greyest Of Blue Skies,Finger Eleven,2000sRock,0tpHuAqLg4NQXPSpxdEUPe,First Time,4.87E-05,0.364,266400,0.867,1.10E-06,8,0.729,-5.604,1,0.139,166.026,4,0.295
