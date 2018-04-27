@@ -8,7 +8,7 @@ library("proxy")
 setwd("~/Documents/GitHub/Spotty_Tagger")
 #setwd("C:/DragonBallZ/git_Repo/Spotty_Tagger")
 
-tracks = read.csv('tracksMusicInfo.csv')
+tracks = read.csv('dataWithLabel.csv')
 tracks = tracks[which(tracks$genre == "Rock" | tracks$genre == "Pop"),]
 
 summary(tracks)
@@ -27,10 +27,20 @@ pc5 = trackPCA$x[,5]
 
 track_name = as.character(tracks[,'track_name'])
 artist = as.character(tracks[,'artist'])
-
+mood = as.character(tracks[,'mood'])
 df = data.frame(artist,pc1,pc2)
 
-ggplot(df, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() + geom_text(aes(label=tracks$genre))
+
+#####
+# Kmeans
+#####
+
+kMeansTrk = kmeans(d,centers = 5)
+
+table(kMeansTrk$cluster,tracks$mood)
+
+
+ggplot(df, aes(pc1,pc2,color=as.factor(kMeansTrk$cluster))) + geom_point() + geom_text(aes(label=tracks$mood))
 
 
 #####################################
@@ -92,13 +102,6 @@ x11()
 layout(matrix(c(1,2),1,2))
 plot(kmed$pamobject)
 
-#####
-# Kmeans
-#####
-
-kMeansTrk = kmeans(d,centers = 9)
-
-table(kMeansTrk$cluster,tracks$genre)
 
 
 
