@@ -13,6 +13,7 @@ summary(tracks)
 
 #colsList = c('acousticness','danceability', 'duration_ms', 'energy', 'instrumentalness', 'key','liveness', 'loudness', 'mode', 'speechiness', 'tempo','time_signature', 'valence')
 colsList = c('acousticness','danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence')
+tracks = tracks[which(tracks$genre != "K-pop"),]
 
 tracksColFil = tracks[,colsList]
 
@@ -108,7 +109,7 @@ tracksColFil = tracks[,colsList]
 names(colors) = unique(tracks$genre)
 
 
-tsne <- Rtsne(tracksColFil, dims = 2, perplexity=30, verbose=TRUE, max_iter = 1000 ,check_duplicates = FALSE)
+tsne <- Rtsne(tracksColFil, dims = 2, perplexity=30, verbose=TRUE, max_iter = 500 ,check_duplicates = FALSE)
 
 plot(tsne$Y, t='n', main="tsne")
 text(tsne$Y, labels=tracks$genre, col=colors[tracks$genre])
