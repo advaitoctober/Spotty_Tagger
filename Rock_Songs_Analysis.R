@@ -1,9 +1,9 @@
 rm(list=ls())
-setwd('C:/DragonBallZ/Spring2018/STA546/ProjectProposal')
+setwd('C:/DragonBallZ/git_Repo/Spotty_Tagger')
 
 library(ggplot2)
-
-tracks = read.csv('RockMusicInfo.csv')
+library("Rtsne")
+tracks = read.csv('RockMusicInfoNew.csv')
 
 
 summary(tracks)
@@ -14,17 +14,25 @@ colsList = c('acousticness','danceability', 'energy', 'instrumentalness', 'liven
 
 tracksColFil = tracks[,colsList]
 
-trackPCA = prcomp(tracksColFil)
+trackPCA = prcomp(tracksColFil,scale = TRUE)
+
+plot(trackPCA)
+
 pc1 = trackPCA$x[,1]
 pc2 = trackPCA$x[,2]
 pc3 = trackPCA$x[,3]
+pc4 = trackPCA$x[,4]
+pc5 = trackPCA$x[,5]
 rockType = as.character(tracks[,'genre'])
-df = data.frame(rockType,pc1,pc2)
+df = data.frame(rockType,pc1,pc2,pc3,pc4,pc5)
 
 
-ggplot(df, aes(pc1,pc2 , color=rockType)) + geom_point() + geom_text(aes(label=rockType))
+ggplot(df, aes(pc1,pc2,color=rockType)) + geom_point() + geom_text(aes(label=tracks$genre))
 
 
-pc_ex2 <- prcomp(tracksColFil, scale = TRUE)
+pc_ex2 <- prcomp(tracksColFil,scale= TRUE)
 biplot(pc_ex2)
-biplot(princomp(tracksColFil),choices=c(1,3))
+#biplot(princomp(tracksColFil),choices=c(1,3))
+
+
+
