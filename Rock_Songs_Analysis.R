@@ -27,7 +27,22 @@ rockType = as.character(tracks[,'genre'])
 df = data.frame(rockType,pc1,pc2,pc3,pc4,pc5)
 
 
-ggplot(df, aes(pc1,pc2,color=rockType)) + geom_point() + geom_text(aes(label=tracks$genre))
+ggplot(df, aes(pc1,pc2,color=rockType)) + geom_point() + geom_text(aes(label=tracks$track_name))
+
+tracks2000 <- subset(tracks , tracks$genre=='2000sRock')
+tracks70 <- subset(tracks , tracks$genre=='70sRock')
+
+colsList = c('acousticness','danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence')
+tracks2000 = tracks2000[,colsList]
+tracks70 = tracks70[,colsList]
+
+pc_tracks2000 <- prcomp(tracks2000,scale= TRUE,center = TRUE)
+pc_tracks70 <- prcomp(tracks70,scale= TRUE,center = TRUE)
+
+x11()
+par(mfrow=c(1,2))
+biplot(pc_tracks70)
+biplot(pc_tracks2000)
 
 
 pc_ex2 <- prcomp(tracksColFil,scale= TRUE)
