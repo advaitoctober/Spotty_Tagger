@@ -296,7 +296,7 @@ nb <- NbClust(tsne$Y, distance = "euclidean", min.nc = 2,
 
 #Kmed
 kmedFast = fastkmed(d, 5, iterate = 10)
-pamKmed = pam(tsne$Y, 4, metric = "euclidean", stand = FALSE)
+pamKmed = pam(tsne$Y, 5, metric = "euclidean", stand = FALSE)
 round(kmedFast$minimum_distance)
 
 pamKmed
@@ -320,21 +320,70 @@ dfts = data.frame(pc1=tsne$Y[,1],pc2=tsne$Y[,2])
 
 #Plot for Kmeans
 kMeanClust = as.factor(kMeansTrk$cluster)
-ggplot(dfts, aes(pc1,pc2,color=kMeanClust)) + geom_point() +geom_text(aes(label=data_Bk$track_name))
+ggplot(dfts, aes(pc1,pc2,color=kMeanClust)) + geom_point() +geom_text(aes(label=data_Bk$track_name)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
-ggplot(dfts, aes(pc1,pc2,color=kMeanClust)) + geom_point() +geom_text(aes(label=data_Bk$genre))
+ggplot(dfts, aes(pc1,pc2,color=kMeanClust)) + geom_point() +geom_text(aes(label=data_Bk$genre)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
+ggplot(dfts, aes(pc1,pc2,color=kMeanClust)) + geom_point() +geom_text(aes(label=data_Bk$artist)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
 #Plot for KMed
 kMedoids_Cluster = as.factor(kmedFast$cluster)
-ggplot(dfts, aes(pc1,pc2,color=kMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$track_name))
-ggplot(dfts, aes(pc1,pc2,color=kMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$genre))
+ggplot(dfts, aes(pc1,pc2,color=kMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$track_name)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+ggplot(dfts, aes(pc1,pc2,color=kMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$genre)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
 
 #Plot for Pam Kmed
-ggplot(dfts, aes(pc1,pc2,color=as.factor(pamKmed$clustering))) + geom_point() +geom_text(aes(label=data_Bk$track_name))
-ggplot(dfts, aes(pc1,pc2,color=as.factor(pamKmed$clustering))) + geom_point() +geom_text(aes(label=data_Bk$genre))
+ggplot(dfts, aes(pc1,pc2,color=as.factor(pamKmed$clustering))) + geom_point() +geom_text(aes(label=data_Bk$track_name))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+ggplot(dfts, aes(pc1,pc2,color=as.factor(pamKmed$clustering))) + geom_point() +geom_text(aes(label=data_Bk$genre))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
 
 tracks_CLust$clust = kMeansTrk$cluster
 
+
+#Better plots
+#Kmeans
+fviz_cluster(kMeansTrk, data = tsne$Y, geom = "point",
+             stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$genre))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
+fviz_cluster(kMeansTrk, data = tsne$Y, geom = "point",
+             stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$track_name))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
+
+#KMed
+fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
+             stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$genre))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
+fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
+             stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$track_name))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
+
+#Hclust
+fviz_cluster(hc, data = tsne$Y, geom = "point",
+             stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$genre))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
+
+#Best cluster
+#Kmeans
+fviz_nbclust(tsne$Y, kmeans, method = "wss")
+#Kmed
+fviz_nbclust(tsne$Y, pam, method = "wss") 
+#hclust
+fviz_nbclust(tsne$Y, hcut, method = "wss") 
+
+
+
+#Hclust
+# Hierarchical clustering results
+hc <- hclust(d, method = "complete")
+# Visualization of hclust
+plot(hc, labels = FALSE, hang = -1)
+# Add rectangle around 3 groups
+rect.hclust(hc, k = 5, border = 2:4) 
+hc.cut <- cutree(hc, k = 5)
+
+
+h_Cluster = as.factor(hc.cut)
+ggplot(dfts, aes(pc1,pc2,color=h_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$track_name)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+ggplot(dfts, aes(pc1,pc2,color=h_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$genre)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
+head(hc.cut, 20)
