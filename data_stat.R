@@ -7,7 +7,7 @@ data <- read.csv("/Users/advait/Documents/GitHub/Spotty_Tagger/dataWithLabel1000
 
 ggplot(data, aes(x=factor(genre)))+
   geom_bar(stat="count", width=0.7, fill="steelblue")+
-  theme_minimal() + xlab("Genre") + ylab("Count")
+  theme_minimal() + xlab("Genre") + ylab("Count") + ggtitle("Genre Count")
 
 #average features for each genre
 data[is.na(data)] <- 0
