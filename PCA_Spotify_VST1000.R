@@ -330,12 +330,14 @@ ggplot(dfts, aes(pc1,pc2,color=kMeanClust)) + geom_point() +geom_text(aes(label=
 kMedoids_Cluster = as.factor(kmedFast$cluster)
 ggplot(dfts, aes(pc1,pc2,color=kMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$track_name)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 ggplot(dfts, aes(pc1,pc2,color=kMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$genre)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+ggplot(dfts, aes(pc2,pc1,color=KMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$mood))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
 
 #Plot for Pam Kmed
 KMedoids_Cluster = as.factor(pamKmed$clustering)
 ggplot(dfts, aes(pc2,pc1,color=KMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$track_name))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 ggplot(dfts, aes(pc2,pc1,color=KMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$genre))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+ggplot(dfts, aes(pc2,pc1,color=KMedoids_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$mood))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
 
 tracks_CLust$clust = kMeansTrk$cluster
@@ -351,6 +353,9 @@ fviz_cluster(kMeansTrk, data = unique(tsneData), geom = "point",
 fviz_cluster(kMeansTrk, data =tsne$Y, geom = "point",
              stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$track_name))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
+fviz_cluster(kMeansTrk, data =tsne$Y, geom = "point",
+             stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$mood))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
 
 #KMed
 fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
@@ -359,6 +364,8 @@ fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
 fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
              stand = FALSE, frame.type = "norm",labelsize = 10) +geom_text(aes(label=data_Bk$track_name))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
+fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
+             stand = FALSE, frame.type = "norm",labelsize = 10) +geom_text(aes(label=data_Bk$mood))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
 #Hclust
 fviz_cluster(hc, data = tsne$Y, geom = "point",
@@ -366,13 +373,17 @@ fviz_cluster(hc, data = tsne$Y, geom = "point",
 
 
 #Best cluster
+par(mfrow=c(1,3))
 #Kmeans
-fviz_nbclust(tsne$Y, kmeans, method = "wss") 
+fviz_nbclust(tsne$Y, kmeans, method = "wss") + ggtitle("K-Means") +
+  theme(plot.title = element_text(hjust = 0.5))
 #Kmed
-fviz_nbclust(tsne$Y, pam, method = "wss") 
+fviz_nbclust(tsne$Y, pam, method = "wss")  + ggtitle("K-Medoids") +
+  theme(plot.title = element_text(hjust = 0.5))
 #hclust
-fviz_nbclust(tsne$Y, hcut, method = "wss") 
-
+fviz_nbclust(tsne$Y, hcut, method = "wss")  + ggtitle("Hierarchical Clustering") +
+  theme(plot.title = element_text(hjust = 0.5))
+par(mfrow=c(1,1))
 
 #Hclust
 # Hierarchical clustering results
@@ -386,6 +397,12 @@ hc.cut <- cutree(hc, k = 5)
 
 h_Cluster = as.factor(hc.cut)
 ggplot(dfts, aes(pc2,pc1,color=h_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$track_name)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2") 
+
 ggplot(dfts, aes(pc2,pc1,color=h_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$genre)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
+
+#Mood
+ggplot(dfts, aes(pc2,pc1,color=h_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$mood)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2") 
+
+
 
 head(hc.cut, 20)
