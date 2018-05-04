@@ -367,6 +367,9 @@ fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
 fviz_cluster(pamKmed, data = tsne$Y, geom = "point",
              stand = FALSE, frame.type = "norm",labelsize = 10) +geom_text(aes(label=data_Bk$mood))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
 
+
+table(pamKmed$clustering,data_Bk$energy_level)
+
 #Hclust
 fviz_cluster(hc, data = tsne$Y, geom = "point",
              stand = FALSE, frame.type = "norm") +geom_text(aes(label=data_Bk$genre))+ xlab("t-SNE Component 1") + ylab("t-SNE Component 2")
@@ -403,6 +406,7 @@ ggplot(dfts, aes(pc2,pc1,color=h_Cluster)) + geom_point() +geom_text(aes(label=d
 #Mood
 ggplot(dfts, aes(pc2,pc1,color=h_Cluster)) + geom_point() +geom_text(aes(label=data_Bk$mood)) + xlab("t-SNE Component 1") + ylab("t-SNE Component 2") 
 
+biplot(prcomp(tracksColFil,scale = TRUE))
 
-
+plot(tsne)
 head(hc.cut, 20)
